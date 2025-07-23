@@ -5,12 +5,207 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Main Page</title>
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Sreylin's Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to my Portfolio</h1>
-        <a href="./about.html"><h2>Click</h2></a>
-    </div>
+    <nav id="desktop-nav">
+        <div class="logo">PORTFOLIO</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#project">Projects & Education</a></li>
+                <li><a href="#me">About Me</a></li>
+                <li><a href="#other">Other</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sreylin Strong</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/mainpic.png" alt="profile-pic" class="main">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sreylin Strong</h1>
+            <p class="section__text__p2">Computer Science Graduate</p>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/cv.pdf', '_blank')">
+                Download CV
+            </button>
+              <button 
+                class="btn btn-color-1"
+                onclick="location.href='#contact'">
+                Contact Info
+              </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/sreylin-strong-9928a1242/" target="_blank" rel="noopener noopener" aria-label="LinkedIn Profile"> <!-- target _blank opens to another tab-->
+                <img 
+                  src="./assets/linkedin.png" 
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  />
+                </a>
+                <a href="https://github.com/Sreylxn" target="_blank" rel="noopener noopener" aria-label="Github Profile">
+                <img 
+                  src="./assets/github2.png" 
+                  alt="My Github profile"
+                  class="icon"
+                />
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-container">
+                    <img src="./assets/star.png" alt="Experience Icon" class="test icon" />
+                    <h3>Projects</h3>
+                    <button class="dropdown-btn" onclick="toggleModules()">View Me</button>
+                        <nav id="display-modules" class="modules hidden">
+                            <ul>
+                                <li><a href="page1.html">Group Project</a></li>
+                                <li><a href="page2.html">Project 2</a></li>
+                                <li><a href="page3.html">Project 3</a></li>
+                                <li><a href="page4.html">Project 4</a></li>
+                                <li><a href="page5.html">...</a></li>
+                                <li><a href="page6.html">...</a></li>
+                                <li><a href="page7.html">...</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Experience Icon" class="test icon" />
+                        <h3>Education</h3>
+                        <p>
+                        BSc. Computer Science (Software Enginering) | University Of Kent <br />
+                        Graphic Design | Southessex College
+                        </p>
+                    </div>
+                <div class="text-container">
+                    <p>
+                        <b>Please do have a look at my projects!</b> 
+                        Fun fact: Did you know that dark-themed websites can
+                        be more environmentally sustainable? 🌍🌱
+                    </p>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+        </div>
+    </section>
+
+    <section id="me">
+        <p class="section__text__p1">Overview of my personal profile</p>
+        <h1 class="title2">Who am I? 👩🏻‍💼</h1>
+        <div class="experience-details-container">
+            <img src="./assets/profile.png" alt="Project-1" class="project-img" />
+        </div>
+        <div class="">Project #1</div>
+        <div class="btn-container"
+            <button class="btn btn-color-2 project-btn" onclick="location.href='page1.html'">Click</button>
+    </section>
+    
+    <section id="other">
+        <h2 class="experience-sub title">Experience</h2>
+        <div class="experience-details-container">
+            <div class="details-container-p1">
+                <h3 class="experience-body">Languages</h3>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Java</h3>
+                            <p>Main</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>CSS and JS</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>Python</h3>
+                            <p>Learning</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>SQL</h3>
+                            <p>Knowledge</p>
+                        </div>
+                    </article>
+              
+                </div>
+            </div>
+
+            <div class="details-container-p1">
+                <h3 class="experience-body">Other</h3>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Knowledge</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Knowledge</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Knowledge</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Knowledge</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/star.png" alt="experience icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Knowledge</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
