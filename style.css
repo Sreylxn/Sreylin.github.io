@@ -192,12 +192,14 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    min-height: 96vh;
+    max-width: 1120px;
+    margin: 0 auto;
     color: white;
     cursor: default;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-
 @media (max-width: 768px) {
     section {
         margin: 0.2rem;
@@ -457,7 +459,6 @@ section {
 /* ARROW ICON */
 
 .test.icon {
-    cursor: default;
     margin-bottom: -0.5rem;
 }
 
@@ -602,40 +603,51 @@ section {
 .contact-container {
     display: flex;
     flex-direction: column;
-    align-items: right;
 }
 
 .contact-one {
     margin-top: -10.5rem;
-    margin-left: 20rem;
+    margin-left: 25rem;
     font-weight: 500;
     font-size: 20px;
 }
 
 .contact-two {
     margin-top: 3.5rem;
-    margin-left: 20rem;
+    margin-left: 29rem;
      font-weight: bold;
 }
 
 .contact-icon-one {
-    margin-right: 18rem;
+    margin-left: 8rem;
     width: 70px;
 }
 
 .contact-icon-two {
-    margin-left: -2.5rem;
+    margin-left: 5.5rem;
     width: 120px;
 }
 
 .plus-icon {
-    margin-left: 48rem;
+    opacity: 0.8;
+    margin-left: 52rem;
     margin-top: -10rem;
-    cursor: pointer;
+    cursor: copy;
 }
 
 .plus-icon-two {
-    margin-left: 48rem;
+    opacity: 0.8;
+    margin-left: 52rem;
     margin-top: 3rem;
-    cursor: pointer;
+    cursor: copy;
+}
+
+.end-text {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.poster-container {
+    display: flex;
+    flex-direction: row;
 }
