@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Sreylin's Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">PORTFOLIO</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#me">About Me</a></li>
+                <li><a href="#project">General</a></li>
+                <li><a href="#other">Contact</a></li>
+                <li><a href="page7.html">Projects ></a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sreylin Strong</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile-container">
+        <div class="section__pic-container">
+            <img src="./assets/mainpic.png" alt="profile-pic" class="main">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sreylin Strong</h1>
+            <p class="section__text__p2">Computer Science Graduate</p>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/cv.pdf', '_blank')">
+                Download CV
+            </button>
+              <button 
+                class="btn btn-color-1"
+                onclick="location.href='#other'">
+                Contact Info
+              </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/sreylin-strong-9928a1242/" target="_blank" rel="noopener noopener" aria-label="LinkedIn Profile"> <!-- target _blank opens to another tab-->
+                <img 
+                  src="./assets/linkedin.png" 
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  />
+                </a>
+                <a href="https://github.com/Sreylxn" target="_blank" rel="noopener noopener" aria-label="Github Profile">
+                <img 
+                  src="./assets/github2.png" 
+                  alt="My Github profile"
+                  class="icon"
+                />
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="me">
+        <div class="description-container">
+        <h1 class="title2">Who am I? 👩🏻‍💼</h1>
+        <p class="description-me">I am a British-Cambodian University of Kent graduate and my friends would describe me as ambitious, highly creative 
+            and motivated. I've always believed that no matter how challenging something feels at first, 
+            if I break it down into small, manageable steps, it makes it possible to overcome. That mindset 
+            is what has brought me this far and has helped me grown every step of the way.</p>
+          <p class="description-me-two">Starting out in college studying Graphic Design, never have 
+            I imagined the confidence to pursue a STEM degree. But this journey is proof of how far 
+            I've come and how much I've grown by pushing through doubt and embracing the unknown. <br><br>Winning an innovation award recognised by CAPACITAS for a collaborative group project that stood out among all 
+            final-year Computer Science and Master’s students, kickstarting Cyber Women within the Cyber Security Society, and receiving a Black Hat Europe Scholarship, these are some of the most meaningful 
+            highlights of my university experience. They’re achievements I never imagined possible when I first started.</p>
+                  <h1 class="title2 whats-next">What's next? 🤷🏻‍♀️</h1>
+                 <p class="description-me-three">Finding ways to contribute, grow and keep learning.
+                    I'm always looking for ways to make a positive impact, even through small things. I'm passionate in designing and problem solving. 
+                    Currently, I’m working toward a Data Analytics certification while continuing to design and build projects on the side. Please feel free to explore my work, I’d love to share what I’ve been creating.</p>
+        <div class="experience-details-container"> 
+             <img src="./assets/2.png" alt="Project-1" class="project-img img-one" />
+            <img src="./assets/3.png" alt="Project-1" class="project-img img-two" />
+              <img src="./assets/4.png" alt="Project-1" class="project-img img-three" />
+        </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-container">
+                    <img src="./assets/star.png" alt="Experience Icon" class="test icon" />
+                    <h3>Projects</h3>
+
+                    <button class="dropdown-btn" onclick="toggleModules()">View Me</button>
+                        <nav id="display-modules" class="modules hidden">
+                            <ul>
+                                <li><a href="page7.html">Group Project ⭐️</a></li>
+                                <li><a href="project.html">Project 1 ⭐️</a></li>
+                                <li><a href="project.html">Project 2 ⭐️</a></li>
+                                <li>...</a></li>
+                                <li><a href="page7.html">View All Projects</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Experience Icon" class="test icon" />
+                        <h3>Education</h3>
+                        <p>
+                        BSc. Computer Science (Software Enginering) | University Of Kent <br />
+                        Graphic Design | Southessex College
+                        </p>
+                    </div>
+                <div class="text-container">
+                    <p>
+                        Fun fact: Did you know that dark-themed websites can
+                        be more environmentally sustainable? 🌍🌱
+                    </p>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+        </div>
+
+    <section id="other">
+         <h2 class="experience-sub title">Contact</h2> 
+        <div class="contact-container">
+         <img src="./assets/letter.svg" alt="Experience Icon" class="test icon contact-icon-one" />
+        <img src="./assets/message.svg" alt="Experience Icon" class="test icon contact-icon-two" />
+         <h3 class="contact-one" id="emailText">sreylinstrng@gmail.com</h3>
+         <h3 class="contact-two" id="phoneText"><br>07913 503569</h3>
+          <img src="./assets/add.svg" alt="Experience Icon" class="test icon plus-icon" id="copyEmailBtn"/>
+              <img src="./assets/add.svg" alt="Experience Icon" class="test icon plus-icon-two" id="copyPhoneBtn" />
+    </div>
+    <p class="end-text">
+        This website and design was created and hosted by me. <b>This is a work in progress. </b>I put in a lot of effort and
+        passion into everything I make so thank you for taking the time to view my website, I really appreciate it.
+    </p>
+    </section>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

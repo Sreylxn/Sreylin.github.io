@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    overflow-x: hidden;
+    background-size: cover;
+    background-color: rgb(29, 29, 29);
+    overscroll-behavior: none;
+    color: white;
+}
+
+h3 {
+     cursor: default;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem; 
+    text-align: center;
+    padding: 5rem;
+    font-weight: 300;
+}
+
+.sub-title {
+    font-size: 2rem; 
+    text-align: center;
+    padding: 1rem;
+    font-weight: 300;
+}
+
+.back {
+    cursor: pointer;
+    position: fixed;
+    top: 4rem;
+    left: 4rem;
+    width: 165px;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: transform 0.3s ease;
+}
+
+.back:hover {
+    transform: scale(1.05);
+}
+
+
+p {
+    margin: 2rem;
+    margin-top: 3rem;
+    width: 1000px;
+    text-align: center;
+    font-size: 18px;
+    cursor: default;
+}
+
+.figma-img {
+    padding: 50px;
+    width: 1000px;
+}
+
+.poster {
+    width: 500px;
+    margin-right: 32rem;
+}
+
+.download-container {
+    display: flex;
+    flex-direction: row;
+    gap: 12rem;
+    margin-bottom: 8rem;
+}
+
+.download-container p {
+    width: 380px;
+}
+
+.parkwood-icon {
+    margin-top: 4rem;
+    border: dashed 10px white;
+    padding: 55px;
+    transition: transform 0.3s ease;
+}
+
+.parkwood-icon:hover {
+    transform: scale(1.05);
+}
