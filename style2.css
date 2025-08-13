@@ -46,7 +46,7 @@ h3 {
     position: fixed;
     top: 4rem;
     left: 4rem;
-    width: 165px;
+    width: 10rem;
     height: auto;
     border-radius: 50%;
     opacity: 0.7;
@@ -59,42 +59,108 @@ h3 {
 
 
 p {
-    margin: 2rem;
+    margin: 2rem auto;
     margin-top: 3rem;
-    width: 1000px;
+    max-width: 90%;
     text-align: center;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.8vw, 18px);
     cursor: default;
 }
 
 .figma-img {
-    padding: 50px;
-    width: 1000px;
+    padding: 5%;
+    max-width: 90%;
+    height: auto;
 }
 
 .poster {
-    width: 500px;
-    margin-right: 32rem;
+    max-width: 90%;
+    height: auto;
+    margin-right: 5%;
 }
 
-.download-container {
+.download-container,
+.download-container-two {
     display: flex;
     flex-direction: row;
-    gap: 12rem;
+    gap: 30%;
+    flex-wrap: nowrap;
     margin-bottom: 8rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.download-container p {
-    width: 380px;
+.download-container p,
+.download-container-two p {
+    width: 90%;
+    max-width: 650px;
 }
 
 .parkwood-icon {
     margin-top: 4rem;
-    border: dashed 10px white;
-    padding: 55px;
+    border: dashed 0.5rem white;
+    padding: 20%;
     transition: transform 0.3s ease;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
 }
 
 .parkwood-icon:hover {
     transform: scale(1.05);
+}
+
+.right_img {
+    width: 40vw;   
+    max-width: none;
+    height: auto;
+    display: block;
+}
+
+
+/* Responsive video container and video */
+.video-container {
+    width: 100%;         
+    max-width: 1000px;    
+    margin: 0 auto;        
+    position: relative;   
+}
+
+.video-container video {
+    width: 100%;         
+    height: auto;        
+    display: block;
+}
+
+@media (max-width: 1024px) { /* Tablet layout same as mobile */
+    .download-container,
+    .download-container-two {
+        flex-direction: column; /* stack items vertically */
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .parkwood-icon {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 15%;
+    }
+
+    .right_img {
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .video-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p, .figma-img, .poster {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }

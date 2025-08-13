@@ -467,8 +467,8 @@ section {
 }
 
 .arrow {
-    position: absolute;
-    right: -5rem;
+    position: fixed;
+    right: 110px;
     bottom: 10rem;
     cursor: pointer;
     width: 5rem;
@@ -547,7 +547,7 @@ section {
 }
 
 .description-me-two {
-     margin-top: 45rem;
+    margin-top: 45rem;
     position: absolute;
     margin-left: -30rem;
     width: 442px;
@@ -651,4 +651,206 @@ section {
 .end-text {
     margin-top: 5rem;
     text-align: center;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* Tablet */
+     #me {
+        display: flex;
+        flex-direction: column;   /* stack elements vertically */
+        align-items: center;      /* center horizontally */
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;      /* reduce extra bottom space */
+        width: 100%;              /* ensure full width */
+    }
+
+    .description-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .experience-details-container {
+        display: flex;
+        flex-direction: column;  /* stack images vertically */
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .project-img {
+        width: 80%;              /* scale images down */
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;       /* remove absolute offsets */
+    }
+
+    .description-me,
+    .description-me-two,
+    .description-me-three {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;      /* remove absolute offsets */
+    }
+
+    .img-one, .img-two {
+        display: none;           /* hide extra images for mobile */
+    }
+
+    .title2,
+    .whats-next {
+        margin: 2rem 0 1rem 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .contact-icon-one, .contact-icon-two {
+        display: none;
+    }
+
+            
+    #other .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+        .contact-one,
+    .contact-two {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile adjustments for #me */
+    #me {
+        display: flex;
+        flex-direction: column;   /* stack elements vertically */
+        align-items: center;      /* center horizontally */
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;      /* reduce extra bottom space */
+        width: 100%;              /* ensure full width */
+    }
+
+    .description-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .experience-details-container {
+        display: flex;
+        flex-direction: column;  /* stack images vertically */
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .project-img {
+        width: 80%;              /* scale images down */
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;       /* remove absolute offsets */
+    }
+
+    .description-me,
+    .description-me-two,
+    .description-me-three {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;      /* remove absolute offsets */
+    }
+
+    .img-one, .img-two {
+        display: none;           /* hide extra images for mobile */
+    }
+
+    .title2,
+    .whats-next {
+        margin: 2rem 0 1rem 0;
+        position: relative;
+        text-align: center;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;       
+        justify-content: center;   
+        gap: 2rem;                
+        padding: 1rem;
+        margin: 0 auto;           /* center the profile container */
+        width: 100%;
+    }
+
+    .profile_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .section__pic-container {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;           /* remove left margin that offsets content */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .section__pic-container .main {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .section__text {
+        margin: 0;                 
+        text-align: center;       
+        position: relative;       
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .contact-icon-one, .contact-icon-two {
+        display: none;
+    }
+
+        
+    #other .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+        .contact-one,
+    .contact-two {
+        margin: 0 auto;
+        text-align: center;
+    }
 }
